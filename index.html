@@ -8,6 +8,34 @@
 </head>
 <body>
     <h1>The Great Library</h1>
+    <button class="new">NEW BOOK</button>
+    <div id="form">
+        <div class="prelude">ADD BOOK</div>
+        <div class="ititle">
+            <label for="newtitle" id='test'>Title</label>
+            <input type='title' id="newtitle" name="newtitle">
+        </div>
+        <div class="iauthor">
+            <label for="newauthor">Author</label>
+            <input type='text' id="newauthor" name="newauthor">
+        </div>
+        <div class="ipages">
+            <label for="newpages">Pages</label>
+            <input type='number' id="newpages" name="newpages">
+        </div>
+        <div class="iread">
+            <div class="one">
+                <label for="read">Read</label>
+                <input type='radio' id="read" name="readornot" value="read">
+            </div>
+            <div class="two">
+                <label for="unread">Not read yet</label>
+                <input type='radio' id="unread" name="readornot" value="unread" checked="checked">
+            </div>
+        </div>
+        <div class="button"><button type='submit' class="add">ADD</button></div>
+        </div>
+    </div>
     <div class="grid"></div>
     <script src="./javascript.js" defer>
     </script> 

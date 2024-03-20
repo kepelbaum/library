@@ -6,6 +6,7 @@ body {
 }
 
 .grid {
+    margin-top: 5vh;
     height: 80vh;
     width: 80vw;
     display: grid;
@@ -14,11 +15,60 @@ body {
 }
 
 .grid > div {
-    background-color: azure;
+    background-color: azure; 
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     gap: 30px;
+}
+
+
+#form {
+    background-color: orangered;
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px; 
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    opacity: 0;
+}
+
+#form > div {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#form input {
+    max-width: 150px;
+}
+
+.one, .two {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prelude {
+    position: absolute;
+    font-size: 40px;
+    top: 50px;
+    left: 23%;
+}
+
+#form > .button {
+    position: absolute;
+    left: 25%;
+    top: 80%;
+}
+
+#form button {
+    width: 200px;
+    height: 60px;
 }
